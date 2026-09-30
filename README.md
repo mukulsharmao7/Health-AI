@@ -10,3 +10,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 2 | 26 Sep 2026 | FastAPI backend foundation, API routing, health-check endpoint, CORS configuration, API versioning and backend structure |
 | Day 3 | 27 Sep 2026 | Wearable health dataset selection, dataset analysis, raw data organization, longitudinal health research problem definition |
 | Day 4 | 28 Sep 2026 | Exploratory data analysis, participant coverage analysis, activity trend visualization, daily step distribution, steps-calories relationship and correlation analysis |
+| Day 5 | 1 Oct 2026 | Data quality auditing, missing-value analysis, duplicate detection and removal, datetime standardization, chronological sorting and processed dataset generation |
