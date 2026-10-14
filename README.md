@@ -14,3 +14,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 6 | 2 Oct 2026 | Feature engineering, personalized 7-observation baselines, activity and sleep deviation features, rolling trends, health ratios and ML-ready feature dataset generation |
 | Day 7 | 12 Oct 2026 | Personal-baseline deviation analysis, sustained activity and sleep deviation rules, preliminary alert flags and ML problem formulation |
 | Day 8 | 13 Oct 2026 | ML input preparation, Isolation Forest anomaly detection, anomaly inspection and comparison with rule-based personalized deviation alerts |
+| Day 9 | 14 Oct 2026 | Anomaly visualization, scatter-plot interpretation, anomaly-score ranking and inspection of unusual personalized activity-sleep patterns |
