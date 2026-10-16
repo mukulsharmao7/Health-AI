@@ -17,3 +17,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 9 | 14 Oct 2026 | Anomaly visualization, scatter-plot interpretation, anomaly-score ranking and inspection of unusual personalized activity-sleep patterns |
 | Day 10 | 14 Oct 2026 | Extreme anomaly inspection, low recorded-sleep quality flags, data-quality overlap analysis and participant-level evaluation planning |
 | Day 11 | 15 Oct 2026 | Participant-level holdout evaluation, train-only Isolation Forest fitting, unseen-participant anomaly scoring and exploratory comparison with rule-based deviation alerts |
+| Day 12 | 16 Oct 2026 | Previous-observation rolling features, missing-history analysis and expanded Isolation Forest feature experiment |
