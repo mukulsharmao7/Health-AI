@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from backend.routes import health
 from fastapi.middleware.cors import CORSMiddleware
+from backend.routes import predict
 
 app = FastAPI(
     title="Health-AI",
@@ -17,5 +18,10 @@ app.add_middleware(
 
 app.include_router(
     health.router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    predict.router,
     prefix="/api/v1"
 )

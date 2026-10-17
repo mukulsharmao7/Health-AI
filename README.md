@@ -19,3 +19,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 11 | 15 Oct 2026 | Participant-level holdout evaluation, train-only Isolation Forest fitting, unseen-participant anomaly scoring and exploratory comparison with rule-based deviation alerts |
 | Day 12 | 16 Oct 2026 | Previous-observation rolling features, missing-history analysis and expanded Isolation Forest feature experiment |
 | Day 13 | 17 Oct 2026 | Participant-level holdout comparison of basic and expanded Isolation Forest feature sets, common-test-set analysis and anomaly agreement assessment |
+| Day 14 | 17 Oct 2026 | Saved Isolation Forest model, reusable prediction service, FastAPI prediction endpoint and successful Swagger API test |
