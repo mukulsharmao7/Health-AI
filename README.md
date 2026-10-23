@@ -22,3 +22,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 14 | 17 Oct 2026 | Saved Isolation Forest model, reusable prediction service, FastAPI prediction endpoint and successful Swagger API test |
 | Day 15 | 18 Oct 2026 | Prediction input validation, numeric boundary checks, API exception handling, server-side error logging and regression testing |
 | Day 16 | 19 Oct 2026 | Time-series sequence generation, participant-level data splitting, PyTorch neural network training and comparison against a mean-prediction baseline |
+| Day 17 | 23 Oct 2026 | StandardScaler-based feature scaling, training-only scaler fitting, participant-level split verification, scaled PyTorch model training and mean-baseline evaluation |
