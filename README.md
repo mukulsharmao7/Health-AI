@@ -24,3 +24,4 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 16 | 19 Oct 2026 | Time-series sequence generation, participant-level data splitting, PyTorch neural network training and comparison against a mean-prediction baseline |
 | Day 17 | 23 Oct 2026 | StandardScaler-based feature scaling, training-only scaler fitting, participant-level split verification, scaled PyTorch model training and mean-baseline evaluation |
 | Day 18 | 30 Oct 2026 | Prediction-versus-actual visualization, absolute error analysis, participant-wise model evaluation and ML observability fundamentals |
+| Day 19 | 1 Nov 2026 | Independent target-scaling experiment, participant-level sequence splitting, input and target standardization, PyTorch training, inverse transformation and baseline comparison |
