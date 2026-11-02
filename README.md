@@ -45,4 +45,11 @@ Install the declared application dependencies with `python -m pip install .`, co
 
 The public educational prototype is live at [health-ai-research.onrender.com](https://health-ai-research.onrender.com). The container applies database migrations before starting the API. The live [readiness endpoint](https://health-ai-research.onrender.com/api/v1/ready) currently reports the model and database as ready. The service does not require a paid model API; optional local Ollama generation is disabled unless configured.
 
+## Future Scope
+
+- Extend the research dashboard into an e-OPD workflow with patient registration, appointment requests, and queue status.
+- Let patients share wearable summaries and self-reported history with a clinician through explicit consent and role-based access.
+- Add clinician-reviewed longitudinal summaries and follow-up notes; keep model outputs advisory and never use them for autonomous diagnosis or treatment.
+- Evaluate usability, privacy, accessibility, and model performance with appropriately governed data before any clinical use.
+
 The included Render plans are free-tier demo settings. Render documents that free web services are not for production use and that free PostgreSQL databases expire 30 days after creation; do not use this setup for long-term or real health records. Upgrade the database plan and complete a privacy/security review before storing any personal data.
