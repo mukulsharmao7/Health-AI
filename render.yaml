@@ -12,7 +12,6 @@ services:
     plan: free
     region: singapore
     autoDeployTrigger: checksPass
-    preDeployCommand: python -m alembic upgrade head
     healthCheckPath: /api/v1/ready
     envVars:
       - key: APP_ENV

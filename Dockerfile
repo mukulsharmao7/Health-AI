@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir . \
 
 USER 10001:10001
 EXPOSE 10000
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
+CMD ["sh", "scripts/start.sh"]

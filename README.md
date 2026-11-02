@@ -34,8 +34,8 @@ Health-AI is an AI-powered personalized health platform that analyzes longitudin
 | Day 26 | 2 Nov 2026 | Added responsive browser dashboard for baseline deviations, API status, research-safe result interpretation and same-origin serving through FastAPI |
 | Day 27 | 2 Nov 2026 | Added citation-backed retrieval over reviewed CDC activity and sleep guidance, `/api/v1/ask`, extractive fallback and optional local Ollama generation with no paid API requirement |
 | Day 28 | 2 Nov 2026 | Added modular data-quality, activity-trend and sleep-trend agents coordinated through a validated 14–60-day workflow and existing research model |
-| Day 29 | 2 Nov 2026 | Added non-root Docker image, Render Blueprint with managed PostgreSQL and pre-deploy migrations, production readiness checks and GitHub Actions CI |
-| Day 30 | 2 Nov 2026 | Finalized security headers and deployment checks; remote CI is configured to validate tests, migration SQL and the Docker image. Public deployment is pending remote CI and a connected hosting workspace |
+| Day 29 | 2 Nov 2026 | Added non-root Docker image, Render Blueprint with managed PostgreSQL, startup migrations, production readiness checks and GitHub Actions CI |
+| Day 30 | 2 Nov 2026 | GitHub Actions passed tests, PostgreSQL migration SQL generation and Docker image build; adjusted startup migrations for Render free-tier compatibility. Public service creation and health-check verification remain |
 
 ## Run locally
 
@@ -43,7 +43,6 @@ Install the declared application dependencies with `python -m pip install .`, co
 
 ## Public prototype deployment
 
-The Docker image and `render.yaml` are configured for a public educational prototype. In Render, create a Blueprint from this repository and review the generated web service and PostgreSQL resources before confirming. The service runs migrations before startup and checks `/api/v1/ready`. The service does not require a paid model API; optional local Ollama generation is disabled unless configured.
+The Docker image and `render.yaml` are configured for a public educational prototype. In Render, create a Blueprint from this repository and review the generated web service and PostgreSQL resources before confirming. The container applies database migrations before starting the API, then checks `/api/v1/ready`. The service does not require a paid model API; optional local Ollama generation is disabled unless configured.
 
 The included Render plans are free-tier demo settings. Render documents that free web services are not for production use and that free PostgreSQL databases expire 30 days after creation; do not use this setup for long-term or real health records. Upgrade the database plan and complete a privacy/security review before storing any personal data.
-
