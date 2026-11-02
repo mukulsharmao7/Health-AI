@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f7f2" />
+    <title>Health-AI | Personal health patterns</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Health-AI home">
+          <span class="brand-mark" aria-hidden="true">h</span>
+          <span>health<span class="brand-accent">ai</span></span>
+        </a>
+        <div class="api-status"><span class="status-dot" id="status-dot"></span><span id="api-status">Checking service</span></div>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">YOUR PERSONAL BASELINE</p>
+        <h1>Notice the changes<br /><em>that matter to you.</em></h1>
+        <p class="lede">Explore how recent activity and sleep compare with your usual pattern.</p>
+      </section>
+
+      <section class="panel" aria-labelledby="check-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">PATTERN CHECK</p><h2 id="check-title">Compare with your baseline</h2></div>
+          <span class="spark" aria-hidden="true">✳</span>
+        </div>
+        <form id="prediction-form">
+          <label for="steps">Activity change <span>over your 7-day baseline</span></label>
+          <div class="input-wrap"><input id="steps" name="steps" type="number" min="-100" max="500" step="0.1" value="0" required /><span>%</span></div>
+          <label for="sleep">Recorded sleep change <span>over your 7-day baseline</span></label>
+          <div class="input-wrap"><input id="sleep" name="sleep" type="number" min="-100" max="500" step="0.1" value="0" required /><span>%</span></div>
+          <button id="submit-button" type="submit">Explore this pattern <span aria-hidden="true">→</span></button>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+        </form>
+      </section>
+
+      <section class="result" id="result" aria-live="polite" hidden>
+        <p class="eyebrow">MODEL REFLECTION</p>
+        <h2 id="result-title"></h2>
+        <p id="result-copy"></p>
+        <div class="score-row"><span>Model score</span><strong id="result-score"></strong></div>
+      </section>
+
+      <section class="panel assistant-panel" aria-labelledby="ask-title">
+        <div class="panel-heading">
+          <div><p class="eyebrow">EVIDENCE DESK</p><h2 id="ask-title">Ask about activity or sleep</h2></div>
+          <span class="spark" aria-hidden="true">⌕</span>
+        </div>
+        <form id="ask-form">
+          <label for="question">General health education question</label>
+          <textarea id="question" name="question" maxlength="500" minlength="3" placeholder="For example: How much activity is recommended for adults?" required></textarea>
+          <button id="ask-button" type="submit">Search reviewed sources <span aria-hidden="true">→</span></button>
+          <p class="form-error" id="ask-error" role="alert" hidden></p>
+        </form>
+        <div class="ask-result" id="ask-result" aria-live="polite" hidden>
+          <p id="answer-text"></p>
+          <ul id="source-list"></ul>
+          <small id="answer-mode"></small>
+        </div>
+      </section>
+
+      <aside class="notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>Research prototype</strong><br />This experimental pattern flag is not a diagnosis, medical advice, or a substitute for care from a qualified health professional.</p></aside>
+      <footer>Health-AI <span>·</span> Your entries are sent only to this service for the current check and are not saved by this page.</footer>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
